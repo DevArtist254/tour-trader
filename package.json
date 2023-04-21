@@ -1,0 +1,30 @@
+{
+ "name": "tour-trader",
+ "version": "1.0.0",
+ "description": "Rest Api Training",
+ "main": "server.js",
+ "scripts": {
+  "start": "nodemon server.js"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/DevArtist254/tour-trader.git"
+ },
+ "keywords": [
+  "Rest",
+  "Api"
+ ],
+ "author": "Kevin Wasonga",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/DevArtist254/tour-trader/issues"
+ },
+ "homepage": "https://github.com/DevArtist254/tour-trader#readme",
+ "dependencies": {
+  "express": "^4.18.2",
+  "mongoose": "^7.0.4"
+ },
+ "devDependencies": {
+  "nodemon": "^2.0.22"
+ }
+}
