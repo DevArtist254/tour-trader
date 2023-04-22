@@ -57,4 +57,12 @@ app.use("/", (req, res, next) => {
 
 app.use("/", ieRouter)
 
+//Bad input on route by the user
+app.all("*", (req, res, next) => {
+ next(new ApiErrorHandler(`${req.originalUrl} couldn't find it`, 404))
+})
+
+//GLOBAL ERROR HANDLER
+app.use(globalErrorHandlerController)
+
 module.exports = app
